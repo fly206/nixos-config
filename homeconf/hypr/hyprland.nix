@@ -3,7 +3,7 @@
 {
   imports = [
     ./waybar.nix
-    ./hyprpaper.nix
+    # ./hyprpaper.nix
     ./hyprlock.nix
     ./hypridle.nix
   ];
@@ -52,7 +52,8 @@
 	};
 
         exec-once = [
-            "hyprpaper"
+            # "hyprpaper"
+            "wpaperd -d"
             "waybar"
             "fcitx5"
             "nm-applet"

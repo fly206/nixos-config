@@ -22,6 +22,7 @@
     ./mypkgs.nix
     ./startship.nix
     ./theme.nix
+    ./wpaperd.nix
     ./xresources.nix
   ];
 }
