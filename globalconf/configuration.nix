@@ -20,5 +20,6 @@
     ./tz.nix
     ./services.nix
     ./fonts.nix
+    ./proxychains.nix
   ];
 }
