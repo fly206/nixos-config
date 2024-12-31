@@ -16,8 +16,16 @@
 
     settings = {
         decoration = {
-        #    shadow_offset = "0 5";
-        #   "col.shadow" = "rgba(1a1a1aee)";
+          rounding = 4;       # 圆角大小
+          # blur = "yes";          # 模糊效果是否启用
+          # blur_size = 5;       # 模糊半径
+          # blur_passes = 1;     # 模糊过滤次数
+          # blur_new_optimizations = "on";     # 模糊优化，通常保持打开
+
+          # drop_shadow = "yes";   # 窗口投影是否启用
+          # shadow_range = 4;    # 投影大小
+          # shadow_render_power = 3;     # 投影强度，不过我不太明白这是什么意思
+          # "col.shadow" = "rgba(1a1a1aee)";     # 投影颜色
         };
         general = {
           gaps_in = 4;
@@ -30,6 +38,7 @@
             "waybar"
             "fcitx5"
             "nm-applet"
+            "mako"
         ];
 
         env = [

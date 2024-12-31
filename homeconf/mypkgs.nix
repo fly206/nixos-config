@@ -13,6 +13,7 @@
     hypridle
     hyprsunset
     hyprshot
+    #mako
     wofi
     networkmanagerapplet
 
@@ -33,6 +34,7 @@
 
     # utils
     libwebp
+    libnotify
 
     # eza # A modern replacement for ‘ls’
     # fzf # A command-line fuzzy finder
