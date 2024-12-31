@@ -16,12 +16,16 @@
     displayManager = {
       lightdm.enable = false;
     };
-  #  desktopManager = {
+    desktopManager = {
+      xterm.enable = false;
   #    cinnamon.enable = true;
   #    plasma5.enable = false;
-  #  };
-  };
+    };
   
+    excludePackages = with pkgs; [
+      xterm
+    ];
+  };
   # services.displayManager.defaultSession = "cinnamon";
   # services.xserver.excludePackages = [ pkgs.xterm ];
 
