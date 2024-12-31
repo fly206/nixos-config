@@ -38,7 +38,8 @@
         };
         primary = {
           background = "0x000606";
-          foreground = "0x95aab9";
+          # foreground = "0x95aab9";
+          foreground = "0xf4f7f8";
         };
         selection = {
           background = "0x404040";
@@ -52,7 +53,7 @@
       window = {
         decorations = "full";
         dynamic_padding = true;
-        opacity = 0.2;
+        opacity = 0.4;
         dimensions = {
           columns = 112;
           lines = 34;

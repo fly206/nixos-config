@@ -8,9 +8,9 @@
     #hyprland
     xdg-desktop-portal-hyprland
     # waybar
-    # hyprpaper
+    hyprpaper
     # hyprlock
-    # hypridle
+    hypridle
     hyprsunset
     hyprshot
     #mako

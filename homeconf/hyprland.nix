@@ -17,7 +17,10 @@
       splash_offset = 2.0;
 
       preload =
-      [ "~/Pictures/117edc8f215125504dcc495a12f135da.webp" ];
+        [ "~/Pictures/3feac77d82541f2e3548c6e913be3f7c.webp" ];
+
+      wallpaper =
+        [ "DP-1,~/Pictures/3feac77d82541f2e3548c6e913be3f7c.webp" ];
     };
   };
 
@@ -93,21 +96,32 @@
     settings = {
         decoration = {
           rounding = 4;       # 圆角大小
-          # blur = "yes";          # 模糊效果是否启用
-          # blur_size = 5;       # 模糊半径
-          # blur_passes = 1;     # 模糊过滤次数
-          # blur_new_optimizations = "on";     # 模糊优化，通常保持打开
+	  
+	  blur = {
+	    enabled = true; # 模糊效果是否启用
+	    size = 5; # 模糊半径
+	    passes = 1; # 模糊过滤次数
+	    new_optimizations = true; # 模糊优化，通常保持打开
 
-          # drop_shadow = "yes";   # 窗口投影是否启用
-          # shadow_range = 4;    # 投影大小
-          # shadow_render_power = 3;     # 投影强度，不过我不太明白这是什么意思
-          # "col.shadow" = "rgba(1a1a1aee)";     # 投影颜色
+	  };
+
+          shadow = {
+            enabled = true; # 窗口投影是否启用
+	    range = 4; # 投影大小
+	    render_power = 3; # 投影强度
+	    color = "rgba(f4f7f8aa)"; # 投影颜色
+	  };
         };
+
         general = {
           gaps_in = 4;
           gaps_out = 8;
           border_size = 1;
         };
+
+	dwindle = {
+	  preserve_split=1;
+	};
 
         exec-once = [
             "hyprpaper"
@@ -130,15 +144,34 @@
         "$mod" = "SUPER";
 
         bind = [
-            "$mod, return, exec, alacritty"
+            "$mod, mouse:272, movewindow" # 按住mod用鼠标左键拖动窗口
+            #"$mod, mouse:273, resizewindow" # 按住mod用鼠标右键拖动窗口
+
             "$mod, Q, killactive"
             "$mod, M, exit"
-            "$mod, F, fullscreen, 0"
-            "$mod, D, exec, wofi --show drun"
-            "SUPERSHIFT, SPACE, togglefloating"
-            "SUPERSHIFT, C, exec, hyprctl reload"
-            "$mod, L, exec, hyprlock"
+            "$mod SHIFT, F, fullscreen, 0"
+            "$mod SHIFT, SPACE, togglefloating"
+            "$mod SHIFT, C, exec, hyprctl reload"
+	    "$mod CTRL, L, changegroupactive" #分组窗口切换
+	    "$mod ALT, left, workspace, -1" #上一工作区
+	    "$mod ALT, right, workspace, +1" #下一工作区
+	    "$mod, D, pseudo" #伪平铺
+	    "$mod, V, togglesplit" #分割切换
+	    "$mod, S, togglegroup" #分组切换
+	    "$mod, left, movefocus, l" #焦点向左
+	    "$mod, right, movefocus, r" #焦点向右
+	    "$mod, up, movefocus, u" #焦点向上
+	    "$mod, down, movefocus, d" #焦点向下
+	    "$mod SHIFT, left, movewindow, l" #窗口向左
+	    "$mod SHIFT, right, movewindow, r" #窗口向右
+	    "$mod SHIFT, up, movewindow, u" #窗口向上
+	    "$mod SHIFT, down, movewindow, d" #窗口向下
+
+            "$mod, return, exec, alacritty"
             "$mod, O, exec, microsoft-edge"
+            "$mod, tab, exec, wofi --show drun"
+
+            "$mod, L, exec, hyprlock"
             ", Print, exec, hyprshot -m region"
         ] ++ (
             # workspaces
@@ -153,7 +186,20 @@
             9)
         );
     };
+    extraConfig = ''
+      # window resize
+      bind = $mod, R, submap, resize
+      submap = resize
+        binde = , right, resizeactive, 10 0
+        binde = , left, resizeactive, -10 0
+        binde = , up, resizeactive, 0 -10
+        binde = , down, resizeactive, 0 10
+        bind = , escape, submap, reset
+      submap = reset
+    '';
   };
+
+
 
   # Optional, hint Electron apps to use Wayland:
   home.sessionVariables.NIXOS_OZONE_WL = "1";
