@@ -7,10 +7,10 @@
   home.packages = with pkgs;[
     #hyprland
     xdg-desktop-portal-hyprland
-    waybar
-    hyprpaper
-    hyprlock
-    hypridle
+    # waybar
+    # hyprpaper
+    # hyprlock
+    # hypridle
     hyprsunset
     hyprshot
     #mako

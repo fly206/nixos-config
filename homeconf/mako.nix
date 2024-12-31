@@ -6,6 +6,6 @@
     package = pkgs.mako;
     enable = true;
     font = "WenQuanYi Micro Hei Mono 8";
-    defaultTimeout = 10;
+    defaultTimeout = 10000;
   };
 }
