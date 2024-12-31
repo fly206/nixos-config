@@ -110,6 +110,9 @@
             "$mod, O, exec, microsoft-edge"
             "$mod, tab, exec, wofi --show drun"
 
+            "$mod, N, exec, wpaperctl next"
+            "$mod, B, exec, wpaperctl previous"
+
             "$mod, L, exec, hyprlock"
             ", Print, exec, hyprshot -m region"
         ] ++ (
