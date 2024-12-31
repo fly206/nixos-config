@@ -26,7 +26,6 @@
     microsoft-edge
     qq
     xfce.thunar
-    lxappearance-gtk2
 
     # archives
     zip

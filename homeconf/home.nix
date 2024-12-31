@@ -21,6 +21,7 @@
     ./mako.nix
     ./mypkgs.nix
     ./startship.nix
+    ./theme.nix
     ./xresources.nix
   ];
 }

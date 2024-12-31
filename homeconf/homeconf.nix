@@ -6,7 +6,7 @@
   #  gtk.enable = false;
   #  x11.enable = true;
   #  package = pkgs.oreo-cursors-plus;
-  #  name = "Oreo-Blue-Dark-Cursors";
+  #  name = "oreo_spark_blue_cursors";
   #  size = 16;
   #};
 
