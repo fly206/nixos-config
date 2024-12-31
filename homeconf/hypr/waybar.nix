@@ -1,11 +1,12 @@
 { config, pkgs, ... }:
 
 {
+  home.file.".config/waybar/style.css".source = ./waybar.css;
   programs.waybar = {
     enable = true;
     package = pkgs.waybar;
-    # style = ''* { border: none; border-radius: 0; font-family: WenQuanYi Micro Hei; }
-    #  window#waybar { background: #16191C55; color: #AAB2BF; } #workspaces button { padding: 0 5px; }'';
+    # style = '' * { border: none; border-radius: 0; font-family: WenQuanYi Micro Hei; }'';
+
     settings = {
       mainbar = {
         layer = "top";
