@@ -9,7 +9,7 @@
     fastfetch
     git
     neovim
-    bubblewrap
+    dconf
   ];
 
   environment.variables.EDITOR = "nvim";
