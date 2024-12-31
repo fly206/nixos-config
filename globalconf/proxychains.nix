@@ -3,7 +3,7 @@
 {
   programs.proxychains = {
     enable = true;
-    package = proxychains-ng;
+    package = pkgs.proxychains-ng;
     quietMode = true;
     proxies = {
       myproxy = {
