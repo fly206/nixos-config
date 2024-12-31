@@ -35,6 +35,11 @@
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
   hardware.cpu.amd.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
 
+  hardware.graphics.enable = true;
+  hardware.amdgpu.amdvlk.enable = true;
+  hardware.amdgpu.amdvlk.support32Bit.enable = true;
+  hardware.amdgpu.amdvlk.supportExperimental.enable = true;
+
   hardware.graphics.extraPackages = with pkgs; [
     amdvlk
   ];

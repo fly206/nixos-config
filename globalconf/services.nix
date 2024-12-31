@@ -13,4 +13,9 @@
 
   # Enable the gvfs daemon.
   services.gvfs.enable = true;
+
+  security.polkit = {
+    enable = true;
+  };
+  
 }

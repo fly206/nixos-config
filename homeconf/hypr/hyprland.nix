@@ -57,10 +57,20 @@
             "fcitx5"
             "nm-applet"
             "mako"
+            "${pkgs.polkit_gnome}/libexec/polkit-gnome-authentication-agent-1"
         ];
 
         env = [
             "QT_QPA_PLATFORM,wayland;xcb"
+            "TERM,alacritty"
+            "QT_SCREEN_SCALE_FACTORS,1;1"
+            "XDG_SESSION_TYPE,wayland"
+            "QT_QPA_PLATFORMHEME,qt6ct"
+            "CLUTTER_BACKEND,wayland"
+            "SDL_VIDEODRIVER,wayland"
+            "GDK_BACKEND,wayland"
+            "WLR_RENDERER,vulkan"
+            "MOZ_ENABLE_WAYLAND,1"
             "XIM,fcitx"
             "XIM_PROGRAM,fcitx"
             "INPUT_METHOD,fcitx"

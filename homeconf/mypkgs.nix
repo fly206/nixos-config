@@ -13,10 +13,12 @@
     hypridle
     hyprsunset
     hyprshot
+    #hyprpolkitagent
     #mako
     wofi
     networkmanagerapplet
     pavucontrol
+    polkit_gnome
 
     # themes
     # papirus-icon-theme
@@ -24,9 +26,12 @@
 
     # 如下是我常用的一些命令行工具，你可以根据自己的需要进行增删
     nnn # terminal file manager
+    
+    # 常用GUI软件
     microsoft-edge
     qq
     xfce.thunar
+    steam
 
     # archives
     zip
@@ -37,7 +42,10 @@
     # utils
     libwebp
     libnotify
-
+    kdePackages.qt6ct
+    # xorg.xhost
+    # xorg.libxcb
+    # xcb-util-cursor
     # eza # A modern replacement for ‘ls’
     # fzf # A command-line fuzzy finder
 
