@@ -18,6 +18,7 @@
     ./git.nix
     ./homeconf.nix
     ./hyprland.nix
+    ./mako.nix
     ./mypkgs.nix
     ./startship.nix
     ./xresources.nix
