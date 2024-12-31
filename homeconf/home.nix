@@ -17,7 +17,7 @@
     ./bash.nix
     ./git.nix
     ./homeconf.nix
-    ./hyprland.nix
+    ./ihypr/hyprland.nix
     ./mako.nix
     ./mypkgs.nix
     ./startship.nix
