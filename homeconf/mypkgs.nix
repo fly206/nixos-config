@@ -25,7 +25,7 @@
     nnn # terminal file manager
     microsoft-edge
     qq
-    # xfce.thunar
+    xfce.thunar
     lxappearance-gtk2
 
     # archives

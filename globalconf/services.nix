@@ -10,4 +10,7 @@
 
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
+
+  # Enable the gvfs daemon.
+  services.gvfs.enable = true;
 }
