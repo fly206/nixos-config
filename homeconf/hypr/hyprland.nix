@@ -87,7 +87,7 @@
             #"$mod, mouse:273, resizewindow" # 按住mod用鼠标右键拖动窗口
 
             "$mod, Q, killactive"
-            "$mod, M, exit"
+            "$mod SHIFT, M, exit"
             "$mod SHIFT, F, fullscreen, 0"
             "$mod SHIFT, SPACE, togglefloating"
             "$mod SHIFT, C, exec, hyprctl reload"
@@ -109,6 +109,7 @@
             "$mod, return, exec, alacritty"
             "$mod, O, exec, microsoft-edge"
             "$mod, tab, exec, wofi --show drun"
+            "$mod SHIFT, B, exec, wget --content-disposition https://www.loliapi.com/acg/pc/ -P ~/Pictures"
 
             "$mod, N, exec, wpaperctl next"
             "$mod, B, exec, wpaperctl previous"
