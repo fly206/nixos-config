@@ -20,6 +20,7 @@
     ./hypr/hyprland.nix
     ./mako.nix
     ./mypkgs.nix
+    ./neovim.nix
     ./startship.nix
     ./theme.nix
     ./wpaperd.nix
