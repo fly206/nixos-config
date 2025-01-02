@@ -106,6 +106,10 @@
 	    "$mod SHIFT, up, movewindow, u" #窗口向上
 	    "$mod SHIFT, down, movewindow, d" #窗口向下
 
+            ", XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+            ", XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
+            ", XF86AudioRaiseVolume, exec, wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%+"
+
             "$mod, return, exec, alacritty"
             "$mod, O, exec, microsoft-edge"
             "$mod, tab, exec, wofi --show drun"
