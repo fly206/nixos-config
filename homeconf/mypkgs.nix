@@ -28,13 +28,16 @@
     # 如下是我常用的一些命令行工具，你可以根据自己的需要进行增删
     nnn # terminal file manager
     clang
-    # bubblewrap
 
     # 常用GUI软件
     microsoft-edge
     qq
     xfce.thunar
-    steam
+
+    # steam相关软件
+    # steam
+    # bubblewrap
+    # glxinfo
 
     # archives
     zip

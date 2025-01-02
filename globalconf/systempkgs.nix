@@ -31,4 +31,5 @@
     package = pkgs.wireshark;
   };
 
+  programs.steam.enable = true;
 }
