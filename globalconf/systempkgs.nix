@@ -12,6 +12,7 @@
     dconf
     greetd.greetd
     greetd.tuigreet
+    blueman
   ];
 
   environment.variables.EDITOR = "nvim";

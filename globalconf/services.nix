@@ -18,6 +18,10 @@
     enable = true;
   };
 
+  #bluetooth
+  services.blueman.enable = true;
+
+  #greetd
   services.greetd = {
     enable = true;
     restart = false;
