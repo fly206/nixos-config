@@ -88,10 +88,10 @@
       #OSD信息位置、字体大小、边框大小(左中右left/center/right,上中下top/center/buttom)
       osd-align-x="left";
       osd-align-y="top";
-      osd-font-size=22
-      osd-border-size=2
+      osd-font-size=22;
+      osd-border-size=2;
       #设置OSD文本信息的持续时间（毫秒）
-      osd-duration=2000
+      osd-duration=2000;
       #OSD随窗口大小缩放
       osd-scale-by-window="no"
 
@@ -113,11 +113,11 @@
       #自动加载含有视频文件名的音频文件
       #audio-file-auto=fuzzy
       #字体大小，此值是以高度为720的屏幕为比例，更大或更小的屏幕会缩放
-      sub-font-size=44
+      sub-font-size=44;
       #未指定样式的字幕字体
       sub-font="sans-serif";
       #未指定样式的字幕边框
-      sub-border-size=2
+      sub-border-size=2;
       #强制外挂ass字幕可使用黑边
       sub-ass-force-margins="yes"
       #指定优先使用音轨（使用ISO-639语言代码，优先级按序递减）
@@ -127,9 +127,9 @@
       #列表播放循环方式，N|inf|no，循环N次/一直循环/不循环
       loop-playlist="inf";
       #启动默认音量
-      volume=90
+      volume=90;
       #程序最大音量[100,1000]
-      volume-max=100
+      volume-max=100;
       #截屏文件格式（可选：jpg、png、webp、jxl、avif）
       screenshot-format="jpg";
       #截屏文件保存路径
