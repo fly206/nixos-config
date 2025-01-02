@@ -92,4 +92,21 @@
       vim.opt.smartcase = true -- but make it case sensitive if an uppercase is entered
     '';
   };
+
+  #添加使用alacritty打开nvim的desktop图标覆盖原始图标
+  home.file.".local/share/applications/nvim.desktop".text = ''
+    [Desktop Entry]
+    Name=Neovim wrapper
+    GenericName=Text Editor
+    Comment=Edit text files
+    TryExec=alacritty
+    Exec=alacritty -e nvim %F
+    Terminal=false
+    Type=Application
+    Keywords=Text;editor;
+    Icon=nvim
+    Categories=Utility;TextEditor;
+    StartupNotify=false
+    MimeType=text/english;text/plain;text/x-makefile;text/x-c++hdr;text/x-c++src;text/x-chdr;text/x-csrc;text/x-java;text/x-moc;text/x-pascal;text/x-tcl;text/x-tex;application/x-shellscript;text/x-c;text/x-c++;
+  '';
 }
