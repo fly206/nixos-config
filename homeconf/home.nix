@@ -19,6 +19,7 @@
     ./homeconf.nix
     ./hypr/hyprland.nix
     ./mako.nix
+    ./mpv.nix
     ./mypkgs.nix
     ./neovim.nix
     ./startship.nix
