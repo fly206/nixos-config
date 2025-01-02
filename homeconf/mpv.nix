@@ -5,7 +5,7 @@
   programs.mpv = {
     enable = true;
     # 自定义配置
-    settings = {
+    config = {
       ##解码/渲染设置##
       
       #视频输出驱动，Windows可选gpu/gpu-next/direct3d等，gpu最成熟稳定，gpu-next为实验性，direct3d只在为兼容老旧系统硬件时使用
@@ -93,7 +93,7 @@
       #设置OSD文本信息的持续时间（毫秒）
       osd-duration=2000;
       #OSD随窗口大小缩放
-      osd-scale-by-window="no"
+      osd-scale-by-window="no";
 
       ##视频/音频/字幕/截图设置##
 
@@ -119,7 +119,7 @@
       #未指定样式的字幕边框
       sub-border-size=2;
       #强制外挂ass字幕可使用黑边
-      sub-ass-force-margins="yes"
+      sub-ass-force-margins="yes";
       #指定优先使用音轨（使用ISO-639语言代码，优先级按序递减）
       alang="zh,chi,chs,sc,zh-hans,en,eng";
       #指定优先使用字幕轨（同上）
