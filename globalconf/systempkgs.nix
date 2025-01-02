@@ -10,6 +10,8 @@
     git
     neovim
     dconf
+    greetd.greetd
+    greetd.tuigreet
   ];
 
   environment.variables.EDITOR = "nvim";
