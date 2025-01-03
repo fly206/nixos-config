@@ -18,12 +18,17 @@
 	modules-center = [];
 	modules-right =  [ "tray" "network" "pulseaudio" "memory" "cpu" "temperature" "clock" ];
 
+        "hyparland/window" = {
+          format = "{title}";
+        };
 	tray = {
 	  spacing = 10;
 	};
 	clock = {
+          interval = 1;
 	  tooltip-format = "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>";
-	  format-alt = "{:%Y-%m-%d}";
+	  # format-alt = "{:%Y-%m-%d}";
+          format = "{:%Y-%m-%d %H:%M:%S}";
 	};
 	cpu = {
 	  format = "{usage}% ";
@@ -38,8 +43,13 @@
 	  format-icons = [ "" "" "" ];
 	};
 	network = {
-	  format-wifi = "{essid} ({signalStrength}%) ";
-	  format-ethernet = "{ipaddr}/{cidr} ";
+          min-length = 38;
+          max-length = 38;
+          justify = "right";
+          align = 1;
+          interval = 2;
+	  format-wifi = "{bandwidthUpBytes}↑ {bandwidthDownBytes}↓    {essid} ({signalStrength}%) ";
+	  format-ethernet = "{bandwidthUpBytes}↑ {bandwidthDownBytes}↓    {ipaddr}/{cidr} ";
 	  tooltip-format = "{ifname} via {gwaddr} ";
 	  format-linked = "{ifname} (No IP) ";
 	  format-disconnected = "Disconnected ⚠";
