@@ -16,7 +16,7 @@
     hyprshot
     #hyprpolkitagent
     #mako
-    wofi
+    #wofi
     networkmanagerapplet
     pavucontrol
     polkit_gnome

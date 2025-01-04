@@ -25,6 +25,7 @@
     ./neovim.nix
     ./startship.nix
     ./theme.nix
+    ./wofi.nix
     ./wpaperd.nix
     ./xresources.nix
   ];
