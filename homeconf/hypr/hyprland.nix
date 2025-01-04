@@ -80,54 +80,64 @@
             "XMODIFIERS,@im=fcitx"
         ];
 
-        "$mod" = "SUPER";
+	windowrulev2 = [
+            # QQ
+            "float, title:^(图片查看器)$"
+            # micorsoft-edge
+
+	];
+
+        "$mainMod" = "SUPER";
 
         bind = [
-            "$mod, mouse:272, movewindow" # 按住mod用鼠标左键拖动窗口
-            #"$mod, mouse:273, resizewindow" # 按住mod用鼠标右键拖动窗口
+            # "$mainMod, mouse:272, movewindow" # 按住mod用鼠标左键拖动窗口
+            # "$mainMod, mouse:273, resizewindow" # 按住mod用鼠标右键拖动窗口
 
-            "$mod, Q, killactive"
-            "$mod SHIFT, M, exit"
-            "$mod SHIFT, F, fullscreen, 0"
-            "$mod SHIFT, SPACE, togglefloating"
-            "$mod SHIFT, C, exec, hyprctl reload"
-	    "$mod CTRL, L, changegroupactive" #分组窗口切换
-	    "$mod ALT, left, workspace, -1" #上一工作区
-	    "$mod ALT, right, workspace, +1" #下一工作区
-	    "$mod, D, pseudo" #伪平铺
-	    "$mod, V, togglesplit" #分割切换
-	    "$mod, S, togglegroup" #分组切换
-	    "$mod, left, movefocus, l" #焦点向左
-	    "$mod, right, movefocus, r" #焦点向右
-	    "$mod, up, movefocus, u" #焦点向上
-	    "$mod, down, movefocus, d" #焦点向下
-	    "$mod SHIFT, left, movewindow, l" #窗口向左
-	    "$mod SHIFT, right, movewindow, r" #窗口向右
-	    "$mod SHIFT, up, movewindow, u" #窗口向上
-	    "$mod SHIFT, down, movewindow, d" #窗口向下
+            "$mainMod, Q, killactive"
+            "$mainMod SHIFT, Q, exit"
+            "$mainMod, F, fullscreen, 0" #全屏
+            "$mainMod SHIFT, F, togglefloating" #浮动
+            "$mainMod SHIFT, E, exec, hyprctl reload" #重加载
+	    "$mainMod, P, pseudo" #伪平铺
+	    "$mainMod, H, togglesplit" #分割切换
+	    "$mainMod, S, togglegroup" #分组切换
+	    "$mainMod SHIFT, L, changegroupactive" #分组窗口切换
+
+	    "$mainMod, left, movefocus, l" #焦点向左
+	    "$mainMod, right, movefocus, r" #焦点向右
+	    "$mainMod, up, movefocus, u" #焦点向上
+	    "$mainMod, down, movefocus, d" #焦点向下
+	    "$mainMod SHIFT, left, movewindow, l" #窗口向左
+	    "$mainMod SHIFT, right, movewindow, r" #窗口向右
+	    "$mainMod SHIFT, up, movewindow, u" #窗口向上
+	    "$mainMod SHIFT, down, movewindow, d" #窗口向下
+            "$mainMod ALT, left, workspace, -1" #上一工作区
+	    "$mainMod ALT, right, workspace, +1" #下一工作区
 
             ", XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
             ", XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
             ", XF86AudioRaiseVolume, exec, wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%+"
 
-            "$mod, return, exec, alacritty"
-            "$mod, O, exec, microsoft-edge"
-            "$mod, tab, exec, wofi --show drun"
-            "$mod SHIFT, B, exec, wget --content-disposition https://www.loliapi.com/acg/pc/ -P ~/Pictures"
+            "$mainMod, return, exec, alacritty"
+            "$mainMod, O, exec, microsoft-edge"
+            "$mainMod, tab, exec, wofi --show drun"
 
-            "$mod, N, exec, wpaperctl next"
-            "$mod, B, exec, wpaperctl previous"
+            "$mainMod, N, exec, wpaperctl next"
+            "$mainMod, B, exec, wpaperctl previous"
+            "$mainMod SHIFT, B, exec, wget --content-disposition https://www.loliapi.com/acg/pc/ -P ~/Pictures"
+            "$mainMod SHIFT, N, exec, wget --content-disposition https://img.darklotus.cn/random -P ~/Pictures"
 
-            "$mod, L, exec, hyprlock"
+
+            "$mainMod, L, exec, hyprlock"
             ", Print, exec, hyprshot -m region"
         ] ++ (
             # workspaces
-            # binds $mod + [shift +] {1..9} to [move to] workspace {1..9}
+            # binds $mainMod + [shift +] {1..9} to [move to] workspace {1..9}
             builtins.concatLists (builtins.genList (i:
                 let ws = i + 1;
                 in [
-                    "$mod, code:1${toString i}, workspace, ${toString ws}"
-                    "$mod SHIFT, code:1${toString i}, movetoworkspace, ${toString ws}"
+                    "$mainMod, code:1${toString i}, workspace, ${toString ws}"
+                    "$mainMod SHIFT, code:1${toString i}, movetoworkspace, ${toString ws}"
                 ]
                 )
             9)
@@ -135,7 +145,7 @@
     };
     extraConfig = ''
       # window resize
-      bind = $mod, R, submap, resize
+      bind = $mainMod, R, submap, resize
       submap = resize
         binde = , right, resizeactive, 10 0
         binde = , left, resizeactive, -10 0

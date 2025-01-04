@@ -18,6 +18,7 @@
     ./git.nix
     ./homeconf.nix
     ./hypr/hyprland.nix
+    ./joplin.nix
     ./mako.nix
     ./mpv.nix
     ./mypkgs.nix
