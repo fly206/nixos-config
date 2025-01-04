@@ -7,7 +7,6 @@
       target = "onedrive";
       interval = "10m";
     };
-    extraConfig = ''
-    '';
+    extraConfig = {};
   };
 }
