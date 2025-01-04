@@ -12,8 +12,8 @@
   gtk = {
     enable = true;
     theme = {
-      name = "Catppuccin-Macchiato-Pink-Dark";
-      package = pkgs.catppuccin-gtk;
+      name = "Arc-Darker";
+      package = pkgs.arc-theme;
       #.override {
         #accents = [ "pink" ];
         #size = "standard";
