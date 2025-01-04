@@ -12,7 +12,7 @@
   gtk = {
     enable = true;
     theme = {
-      name = "Arc-Darker";
+      name = "Arc-Dark";
       package = pkgs.arc-theme;
       #.override {
         #accents = [ "pink" ];
