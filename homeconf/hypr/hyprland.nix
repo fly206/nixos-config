@@ -83,8 +83,8 @@
 	windowrulev2 = [
             # QQ
             "float, title:^(图片查看器)$"
-            # micorsoft-edge
-
+            "float, title:^(视频播放器)$"
+            "float, title:^(群聊的聊天记录)$"
 	];
 
         "$mainMod" = "SUPER";
