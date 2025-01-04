@@ -2,6 +2,8 @@
 
 {
   services.blueman-applet.enable = true;
+  services.playerctld.enable = true;
+
   # 通过 home.packages 安装一些常用的软件
   # 这些软件将仅在当前用户下可用，不会影响系统级别的配置
   # 建议将所有 GUI 软件，以及与 OS 关系不大的 CLI 软件，都通过 home.packages 安装
@@ -28,6 +30,7 @@
     # 如下是我常用的一些命令行工具，你可以根据自己的需要进行增删
     nnn # terminal file manager
     clang
+    playerctl
 
     # 常用GUI软件
     microsoft-edge

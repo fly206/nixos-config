@@ -14,7 +14,7 @@
     };
     style = ''
         #window {
-            background-color: rgba(45, 48, 59, 0.95);
+            background-color: rgba(45, 48, 59, 0.65);
             border: 1px solid rgb(124, 131, 137);
             font-family: monospace;
             font-size: 16px;
