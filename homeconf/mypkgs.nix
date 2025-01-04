@@ -31,6 +31,7 @@
     nnn # terminal file manager
     clang
     playerctl
+    bottom
 
     # 常用GUI软件
     microsoft-edge

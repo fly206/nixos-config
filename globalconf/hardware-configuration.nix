@@ -13,15 +13,21 @@
   boot.kernelModules = [ "kvm-amd" ];
   boot.extraModulePackages = [ ];
   boot.kernelPackages = pkgs.linuxPackages_xanmod_latest;
-  fileSystems."/" =
-    { device = "/dev/disk/by-uuid/62d946af-cc8a-4465-bcef-ddda9d4a601c";
-      fsType = "btrfs";
-    };
+  fileSystems."/" = { 
+    device = "/dev/disk/by-uuid/62d946af-cc8a-4465-bcef-ddda9d4a601c";
+    fsType = "btrfs";
+  };
 
-    fileSystems."/game" =
-    { device = "/dev/disk/by-uuid/60ddb062-50a7-4fe8-8a0e-15f95aeeb24e";
-      fsType = "ext4";
-    };
+  fileSystems."/game" = {
+    device = "/dev/disk/by-uuid/60ddb062-50a7-4fe8-8a0e-15f95aeeb24e";
+    fsType = "ext4";
+  };
+
+  fileSystems."/data" = {
+    device = "/dev/disk/by-uuid/8CEEEA87EEEA6942";
+    fsType = "ntfs";
+  };
+
 
   zramSwap = {
     enable = true;
