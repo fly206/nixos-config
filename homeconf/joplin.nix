@@ -1,4 +1,4 @@
-{}:
+{ config, pkgs, ... }:
 
 {
   programs.joplin-desktop = {
