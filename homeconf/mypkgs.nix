@@ -43,6 +43,9 @@
     # bubblewrap
     # glxinfo
 
+    # game
+    hmcl
+    glfw-wayland-minecraft
     # archives
     zip
     xz
