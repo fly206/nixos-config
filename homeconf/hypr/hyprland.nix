@@ -104,29 +104,44 @@
         "$mainMod" = "SUPER";
 
         bind = [
-            # "$mainMod, mouse:272, movewindow" # 按住mod用鼠标左键拖动窗口
-            # "$mainMod, mouse:273, resizewindow" # 按住mod用鼠标右键拖动窗口
+            "$mainMod, mouse:272, moveactive" # 按住mod用鼠标左键拖动窗口
+            "$mainMod, mouse:273, resizeactive" # 按住mod用鼠标右键拖动窗口
 
             "$mainMod, Q, killactive"
             "$mainMod SHIFT, Q, exit"
             "$mainMod, F, fullscreen, 0" #全屏
             "$mainMod SHIFT, F, togglefloating" #浮动
             "$mainMod SHIFT, E, exec, hyprctl reload" #重加载
-	    "$mainMod, P, pseudo" #伪平铺
-	    "$mainMod, H, togglesplit" #分割切换
-	    "$mainMod, S, togglegroup" #分组切换
-	    "$mainMod SHIFT, L, changegroupactive" #分组窗口切换
+            "$mainMod, P, pseudo" #伪平铺
+            "$mainMod, H, togglesplit" #分割切换
 
-	    "$mainMod, left, movefocus, l" #焦点向左
-	    "$mainMod, right, movefocus, r" #焦点向右
-	    "$mainMod, up, movefocus, u" #焦点向上
-	    "$mainMod, down, movefocus, d" #焦点向下
-	    "$mainMod SHIFT, left, movewindow, l" #窗口向左
-	    "$mainMod SHIFT, right, movewindow, r" #窗口向右
-	    "$mainMod SHIFT, up, movewindow, u" #窗口向上
-	    "$mainMod SHIFT, down, movewindow, d" #窗口向下
-            "$mainMod ALT, left, workspace, -1" #上一工作区
-	    "$mainMod ALT, right, workspace, +1" #下一工作区
+            "$mainMod CTRL, left, moveactive, -40 0" #浮动窗口向左
+	        "$mainMod CTRL, right, moveactive, 40 0" #浮动窗口向右
+	        "$mainMod CTRL, up, moveactive, 0 -40" #浮动窗口向上
+	        "$mainMod CTRL, down, moveactive, 0 40" #浮动窗口向下
+
+	        "$mainMod, left, movefocus, l" #焦点向左
+	        "$mainMod, right, movefocus, r" #焦点向右
+	        "$mainMod, up, movefocus, u" #焦点向上
+	        "$mainMod, down, movefocus, d" #焦点向下
+
+            "$mainMod SHIFT, left, movewindow, l" #窗口向左
+	        "$mainMod SHIFT, right, movewindow, r" #窗口向右
+	        "$mainMod SHIFT, up, movewindow, u" #窗口向上
+	        "$mainMod SHIFT, down, movewindow, d" #窗口向下
+
+            # "$mainMod ALT, left, workspace, -1" #上一工作区
+	        # "$mainMod ALT, right, workspace, +1" #下一工作区
+
+            # 分组配置
+            "$mainMod, S, togglegroup" #将当前活动窗口放到组中
+            "$mainMod ALT, left, moveintogroup, l" #将窗口移动到左边的组
+            "$mainMod ALT, right, moveintogroup, r" #将窗口移动到右边的组
+            "$mainMod ALT, up, moveintogroup, u" #将窗口移动到上边的组
+            "$mainMod ALT, down, moveintogroup, d" #将窗口移动到下边的组
+            "$mainMod, >, changegroupactive, f" #切换组内下一窗口
+            "$mainMod, <, changegroupactive, b" #切换组内上一窗口
+            "$mainMod ALT, S,  moveoutofgroup" #切出组
 
             ", XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
             ", XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 2%-"
