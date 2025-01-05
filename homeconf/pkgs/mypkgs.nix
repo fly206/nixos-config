@@ -3,6 +3,7 @@
 {
   imports = [
     ./alacritty.nix
+    ./fcitx5/fcitx5.nix
     ./joplin.nix
     ./mpv.nix
     ./neovim.nix

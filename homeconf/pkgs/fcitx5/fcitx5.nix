@@ -17,12 +17,6 @@
     executable = true;  # 将其中所有文件添加「执行」权限
   };
 
-  home.file.".local/share/fcitx5/pinyin/dictionaries" = {
-    source = ./pinyin/dictionaries;
-    recursive = true;   # 递归整个文件夹
-    executable = true;  # 将其中所有文件添加「执行」权限
-  };
-
   # 直接以 text 的方式，在 nix 配置文件中硬编码文件内容
   # home.file.".xxx".text = ''
   #     xxx
