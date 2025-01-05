@@ -53,7 +53,7 @@
       window = {
         decorations = "full";
         dynamic_padding = true;
-        opacity = 0.4;
+        opacity = 0.75;
         dimensions = {
           columns = 112;
           lines = 34;

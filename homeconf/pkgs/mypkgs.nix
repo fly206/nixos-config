@@ -26,6 +26,9 @@
     microsoft-edge
     qq
     wechat-uos
+    krita
+    krita-plugin-gmic
+    wpsoffice-cn
 
     # game
     hmcl

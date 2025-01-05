@@ -7,6 +7,6 @@
     enable = true;
     font = "WenQuanYi Micro Hei Mono 8";
     defaultTimeout = 10000;
-    backgroundColor = "#f7f4f332";
+    backgroundColor = "#51497288";
   };
 }
