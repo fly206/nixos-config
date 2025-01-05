@@ -12,17 +12,10 @@
   ];
 
   home.packages = with pkgs;[
-    #hyprland
     xdg-desktop-portal-hyprland
-    # waybar
-    # hyprpaper
-    # hyprlock
     hypridle
     hyprsunset
     hyprshot
-    #hyprpolkitagent
-    #mako
-    #wofi
     networkmanagerapplet
     pavucontrol
     polkit_gnome

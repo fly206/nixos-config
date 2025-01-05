@@ -16,44 +16,18 @@
   # 这些软件将仅在当前用户下可用，不会影响系统级别的配置
   # 建议将所有 GUI 软件，以及与 OS 关系不大的 CLI 软件，都通过 home.packages 安装
   home.packages = with pkgs;[
-    #hyprland
-#    xdg-desktop-portal-hyprland
-    # waybar
-    # hyprpaper
-    # hyprlock
-#    hypridle
-#    hyprsunset
-#    hyprshot
-    #hyprpolkitagent
-    #mako
-    #wofi
-#    networkmanagerapplet
-#    pavucontrol
-#    polkit_gnome
-#    playerctl
-
-    # themes
-    # papirus-icon-theme
-    # oreo-cursors-plus
-
     # 如下是我常用的一些命令行工具，你可以根据自己的需要进行增删
     nnn # terminal file manager
-    clang
-    bottom
 
     # 常用GUI软件
     microsoft-edge
     qq
     xfce.thunar
 
-    # steam相关软件
-    # steam
-    # bubblewrap
-    # glxinfo
-
     # game
     hmcl
     glfw-wayland-minecraft
+
     # archives
     zip
     xz
@@ -64,21 +38,18 @@
     libwebp
     libnotify
     kdePackages.qt6ct
-    # xorg.xhost
-    # xorg.libxcb
-    # xcb-util-cursor
     # eza # A modern replacement for ‘ls’
     # fzf # A command-line fuzzy finder
 
     # networking tools
-    # mtr # A network diagnostic tool
-    # iperf3
+    mtr # A network diagnostic tool
+    iperf3
     # dnsutils  # `dig` + `nslookup`
     # ldns # replacement of `dig`, it provide the command `drill`
     # aria2 # A lightweight multi-protocol & multi-source command-line download utility
-    # socat # replacement of openbsd-netcat
+    socat # replacement of openbsd-netcat
     nmap # A utility for network discovery and security auditing
-    # ipcalc  # it is a calculator for the IPv4/v6 addresses
+    ipcalc  # it is a calculator for the IPv4/v6 addresses
 
     # misc
     # cowsay
@@ -90,6 +61,7 @@
     gawk
     zstd
     gnupg
+    clang
 
     # nix related
     #
@@ -109,6 +81,7 @@
     strace # system call monitoring
     ltrace # library call monitoring
     lsof # list open files
+    bottom # show system status
 
     # system tools
     # sysstat
