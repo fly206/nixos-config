@@ -6,6 +6,7 @@
     ./joplin.nix
     ./mpv.nix
     ./neovim.nix
+    ./obs.nix
     ./startship.nix
   ];
 
