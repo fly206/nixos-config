@@ -139,8 +139,8 @@
             "$mainMod ALT, right, moveintogroup, r" #将窗口移动到右边的组
             "$mainMod ALT, up, moveintogroup, u" #将窗口移动到上边的组
             "$mainMod ALT, down, moveintogroup, d" #将窗口移动到下边的组
-            "$mainMod, >, changegroupactive, f" #切换组内下一窗口
-            "$mainMod, <, changegroupactive, b" #切换组内上一窗口
+            "$mainMod ALT, p, changegroupactive, f" #切换组内下一窗口
+            "$mainMod ALT, o, changegroupactive, b" #切换组内上一窗口
             "$mainMod ALT, S,  moveoutofgroup" #切出组
 
             ", XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
