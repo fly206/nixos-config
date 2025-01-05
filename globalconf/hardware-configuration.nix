@@ -52,7 +52,7 @@
   hardware.amdgpu.amdvlk.supportExperimental.enable = true;
 
   hardware.graphics.extraPackages = with pkgs; [
-    amdvlk
+    amdvlk mesa
   ];
 
   hardware.bluetooth = {
