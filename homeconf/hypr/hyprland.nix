@@ -2,10 +2,31 @@
 
 {
   imports = [
-    ./waybar.nix
-    # ./hyprpaper.nix
-    ./hyprlock.nix
     ./hypridle.nix
+    ./hyprlock.nix
+    # ./hyprpaper.nix
+    ./mako.nix
+    ./waybar.nix
+    ./wofi.nix
+    ./wpaperd.nix    
+  ];
+
+  home.packages = with pkgs;[
+    #hyprland
+    xdg-desktop-portal-hyprland
+    # waybar
+    # hyprpaper
+    # hyprlock
+    hypridle
+    hyprsunset
+    hyprshot
+    #hyprpolkitagent
+    #mako
+    #wofi
+    networkmanagerapplet
+    pavucontrol
+    polkit_gnome
+    playerctl
   ];
 
   wayland.windowManager.hyprland = {

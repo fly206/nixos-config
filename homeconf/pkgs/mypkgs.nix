@@ -1,6 +1,14 @@
 { config, pkgs, ... }:
 
 {
+  imports = [
+    ./alacritty.nix
+    ./joplin.nix
+    ./mpv.nix
+    ./neovim.nix
+    ./startship.nix
+  ];
+
   services.blueman-applet.enable = true;
   services.playerctld.enable = true;
 
@@ -9,19 +17,20 @@
   # 建议将所有 GUI 软件，以及与 OS 关系不大的 CLI 软件，都通过 home.packages 安装
   home.packages = with pkgs;[
     #hyprland
-    xdg-desktop-portal-hyprland
+#    xdg-desktop-portal-hyprland
     # waybar
     # hyprpaper
     # hyprlock
-    hypridle
-    hyprsunset
-    hyprshot
+#    hypridle
+#    hyprsunset
+#    hyprshot
     #hyprpolkitagent
     #mako
     #wofi
-    networkmanagerapplet
-    pavucontrol
-    polkit_gnome
+#    networkmanagerapplet
+#    pavucontrol
+#    polkit_gnome
+#    playerctl
 
     # themes
     # papirus-icon-theme
@@ -30,7 +39,6 @@
     # 如下是我常用的一些命令行工具，你可以根据自己的需要进行增删
     nnn # terminal file manager
     clang
-    playerctl
     bottom
 
     # 常用GUI软件

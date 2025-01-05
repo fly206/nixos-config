@@ -13,20 +13,12 @@
 
   # 引入其他模块
   imports = [
-    ./alacritty.nix
     ./bash.nix
     ./git.nix
     ./homeconf.nix
     ./hypr/hyprland.nix
-    ./joplin.nix
-    ./mako.nix
-    ./mpv.nix
-    ./mypkgs.nix
-    ./neovim.nix
-    ./startship.nix
+    ./pkgs/mypkgs.nix
     ./theme.nix
-    ./wofi.nix
-    ./wpaperd.nix
     ./xresources.nix
   ];
 }
