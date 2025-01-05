@@ -40,7 +40,7 @@
           rounding = 6;       # 圆角大小
 	  
 	  blur = {
-	    enabled = true; # 模糊效果是否启用
+	    enabled = false; # 模糊效果是否启用
 	    size = 5; # 模糊半径
 	    passes = 1; # 模糊过滤次数
 	    new_optimizations = true; # 模糊优化，通常保持打开
@@ -48,10 +48,10 @@
 	  };
 
           shadow = {
-            enabled = true; # 窗口投影是否启用
-	    range = 4; # 投影大小
-	    render_power = 3; # 投影强度
-	    color = "rgba(f4f7f8aa)"; # 投影颜色
+            enabled = false; # 窗口投影是否启用
+	    range = 1; # 投影大小
+	    render_power = 2; # 投影强度
+	    color = "rgba(313132aa)"; # 投影颜色
 	  };
         };
 
