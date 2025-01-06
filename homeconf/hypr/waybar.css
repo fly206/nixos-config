@@ -175,7 +175,7 @@ window#waybar.hidden {
     	color: #b5e8e0;
 }
 
-#backlight {
+#custom-brightness {
 	background: #1e2021;
 	border-radius: 3px;
 	color: #f8bd96;

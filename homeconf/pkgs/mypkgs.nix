@@ -21,6 +21,7 @@
     # 如下是我常用的一些命令行工具，你可以根据自己的需要进行增删
     nnn # terminal file manager
     viu # terminal images viewer
+    moc # terminal audio player
 
     # 常用GUI软件
     xfce.thunar
@@ -69,6 +70,7 @@
     zstd
     gnupg
     clang
+    killall
 
     # nix related
     #

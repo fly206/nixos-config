@@ -150,6 +150,8 @@
             ", XF86AudioPause, exec, playerctl play-pause"
             ", XF86AudioNext, exec, playerctl next"
             ", XF86AudioPrev, exec, playerctl previous"
+	    "$mainMod, F11, exec, ddcutil setvcp - 5"
+	    "$mainMod, F12, exec, ddcutil setvcp + 5"
 
             "$mainMod, return, exec, alacritty"
             "$mainMod, O, exec, microsoft-edge"

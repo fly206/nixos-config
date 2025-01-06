@@ -13,6 +13,7 @@
     greetd.greetd
     greetd.tuigreet
     blueman
+    ddcutil
   ];
 
   environment.variables.EDITOR = "nvim";
