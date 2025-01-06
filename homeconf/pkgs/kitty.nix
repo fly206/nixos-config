@@ -17,8 +17,7 @@
 
     font = {
       size = 12;
-      family = "WenQuanYi Micro Hei Mono";
-      style = "Bold";
+      name = "WenQuanYi Micro Hei Mono";
     };
   };
 }
