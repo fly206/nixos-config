@@ -77,7 +77,6 @@
 
         env = [
             "QT_QPA_PLATFORM,wayland;xcb"
-            "TERM,alacritty"
             "QT_SCREEN_SCALE_FACTORS,1;1"
             "XDG_SESSION_TYPE,wayland"
             "QT_QPA_PLATFORMHEME,qt6ct"
@@ -153,7 +152,7 @@
 	    "$mainMod, F11, exec, ddcutil setvcp - 5"
 	    "$mainMod, F12, exec, ddcutil setvcp + 5"
 
-            "$mainMod, return, exec, alacritty"
+            "$mainMod, return, exec, kitty"
             "$mainMod, O, exec, microsoft-edge"
             "$mainMod, tab, exec, wofi --show drun"
 

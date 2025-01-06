@@ -17,7 +17,8 @@
 
     font = {
       size = 12;
-      name = "WenQuanYi Micro Hei Mono";
+      name = "WenQuanYi Micro Hei";
     };
+    extraConfig = "background_opacity 1.0";
   };
 }
