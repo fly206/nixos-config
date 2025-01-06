@@ -2,9 +2,10 @@
 
 {
   imports = [
-    ./alacritty.nix
+    # ./alacritty.nix
     ./fcitx5/fcitx5.nix
     ./joplin.nix
+    ./kitty.nix
     ./mpv.nix
     ./neovim.nix
     ./obs.nix
