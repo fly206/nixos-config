@@ -11,14 +11,22 @@
       update_check_interval = 0;
     };
     
+    font = {
+      package = pkgs.cascadia-code;
+      name = "Cascadia Mono";
+    };
+
     environment = {
       "TERM" = "xterm-256color";
     };
 
-    font = {
-      size = 12;
-      name = "WenQuanYi Micro Hei";
-    };
-    extraConfig = "background_opacity 1.0";
+    extraConfig = ''
+      background_opacity 0.7
+      # font_family      Cascadia Mono
+      # bold_font        auto
+      # italic_font      auto
+      # bold_italic_font auto
+      symbol_map U+4E00-U+9FA5 WenQuanYi Micro Hei
+    '';
   };
 }
