@@ -39,7 +39,7 @@ window#waybar.hidden {
 	background: transparent;
 	color: transparent;
 	margin-top: 4px;
-        margin-bottom: 4px;
+    margin-bottom: 4px;
 	padding-left: 10px;
 	padding-right: 10px;
 	transition: none;
@@ -103,13 +103,13 @@ window#waybar.hidden {
 
 }
 #workspaces button.focused {
-        background-color: #bbccdd;
-        color: #1e2021;
+    background-color: #bbccdd;
+    color: #1e2021;
 	font-family: feather;
 	font-size: 10px;
 }
 #workspaces button.urgent {
-        background-color: #fae3b0;
+    background-color: #fae3b0;
 	font-family: feather;
 	font-size: 10px;
 }
@@ -118,15 +118,15 @@ window#waybar.hidden {
 #workspaces {
 	font-family: feather;
 	font-size: 10px;
-        margin: 0 4px;
+    margin: 0 4px;
 }
 
 .modules-left > widget:first-child > #workspaces {
-        margin-left: 0;
+    margin-left: 0;
 }
 
 .modules-right > widget:first-child > #workspaces {
-        margin-right: 0;
+    margin-right: 0;
 }
 
 #network {
@@ -171,8 +171,8 @@ window#waybar.hidden {
 }
 
 #battery.critical:not(.charging) {
-    	background-color: #1e2021;
-    	color: #b5e8e0;
+  	background-color: #1e2021;
+	color: #b5e8e0;
 }
 
 #custom-brightness {

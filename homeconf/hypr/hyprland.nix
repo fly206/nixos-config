@@ -37,7 +37,7 @@
 
     settings = {
         decoration = {
-          rounding = 6;       # 圆角大小
+          rounding = 0;       # 圆角大小
 	  
 	  blur = {
 	    enabled = false; # 模糊效果是否启用
