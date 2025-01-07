@@ -21,7 +21,6 @@
   # 建议将所有 GUI 软件，以及与 OS 关系不大的 CLI 软件，都通过 home.packages 安装
   home.packages = with pkgs;[
     # 常用GUI软件
-    xfce.thunar
     microsoft-edge
     qq
     wechat-uos
@@ -45,6 +44,12 @@
     kdePackages.qt6ct
     # eza # A modern replacement for ‘ls’
     # fzf # A command-line fuzzy finder
+    android-tools # adb fastboot
+
+    #filesystem
+    cifs-utils # Tools for managing Linux CIFS client filesystems.
+    sshfs-fuse # FUSE-based filesystem that allows remote filesystems to be mounted over SSH.
+    mtpfs # FUSE Filesystem providing access to MTP devices.
 
     # networking tools
     mtr # A network diagnostic tool

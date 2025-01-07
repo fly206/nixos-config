@@ -12,7 +12,7 @@
   services.openssh.enable = true;
 
   # Enable the gvfs daemon.
-  services.gvfs.enable = true;
+  # services.gvfs.enable = true;
 
   security.polkit = {
     enable = true;
