@@ -103,8 +103,10 @@
         "$mainMod" = "SUPER";
 
         bind = [
-            "$mainMod, mouse:272, moveactive" # 按住mod用鼠标左键拖动窗口
-            "$mainMod, mouse:273, resizeactive" # 按住mod用鼠标右键拖动窗口
+            # "$mainMod, mouse:272, moveactive" # 按住mod用鼠标左键拖动窗口
+            # "$mainMod, mouse:273, resizeactive" # 按住mod用鼠标右键拖动窗口
+            "$mainMod, mouse:272, movewindow" # Move window with the mouse
+            "$mainMod, mouse:273, resizewindow" # Resize window with the mouse
 
             "$mainMod, Q, killactive"
             "$mainMod SHIFT, Q, exit"
