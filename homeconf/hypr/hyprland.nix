@@ -128,6 +128,8 @@
 	        "$mainMod SHIFT, right, movewindow, r" #窗口向右
 	        "$mainMod SHIFT, up, movewindow, u" #窗口向上
 	        "$mainMod SHIFT, down, movewindow, d" #窗口向下
+	        "$mainMod SHIFT, A, swapnext, prev" #窗口向下
+	        "$mainMod SHIFT, S, swapnext" #窗口向下
 
             # "$mainMod ALT, left, workspace, -1" #上一工作区
 	        # "$mainMod ALT, right, workspace, +1" #下一工作区
