@@ -133,7 +133,7 @@
 	        # "$mainMod ALT, right, workspace, +1" #下一工作区
 
             # 分组配置
-            "$mainMod, S, togglegroup" #将当前活动窗口放到组中
+            "$mainMod, W, togglegroup" #将当前活动窗口放到组中
             "$mainMod ALT, left, moveintogroup, l" #将窗口移动到左边的组
             "$mainMod ALT, right, moveintogroup, r" #将窗口移动到右边的组
             "$mainMod ALT, up, moveintogroup, u" #将窗口移动到上边的组
