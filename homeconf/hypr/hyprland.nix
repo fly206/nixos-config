@@ -120,6 +120,9 @@
 	        "$mainMod, right, movefocus, r" #焦点向右
 	        "$mainMod, up, movefocus, u" #焦点向上
 	        "$mainMod, down, movefocus, d" #焦点向下
+	        "$mainMod, S, cyclenext" #焦点向后
+	        "$mainMod, A, cyclenext, prev" #焦点向前
+
 
             "$mainMod SHIFT, left, movewindow, l" #窗口向左
 	        "$mainMod SHIFT, right, movewindow, r" #窗口向右
