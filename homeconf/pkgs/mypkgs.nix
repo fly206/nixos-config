@@ -49,7 +49,7 @@
     #filesystem
     cifs-utils # Tools for managing Linux CIFS client filesystems.
     sshfs-fuse # FUSE-based filesystem that allows remote filesystems to be mounted over SSH.
-    mtpfs # FUSE Filesystem providing access to MTP devices.
+    jmtpfs # FUSE Filesystem providing access to MTP devices.
 
     # networking tools
     mtr # A network diagnostic tool
