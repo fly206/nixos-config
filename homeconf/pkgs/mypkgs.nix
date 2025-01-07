@@ -10,7 +10,7 @@
     ./neovim.nix
     ./obs.nix
     ./startship.nix
-    ./yazi.nix
+    # ./yazi.nix
   ];
 
   services.blueman-applet.enable = true;
@@ -27,6 +27,7 @@
     krita
     krita-plugin-gmic
     wpsoffice-cn
+    xfce4.thunar
 
     # game
     hmcl
@@ -46,10 +47,10 @@
     # fzf # A command-line fuzzy finder
     android-tools # adb fastboot
 
-    #filesystem
-    cifs-utils # Tools for managing Linux CIFS client filesystems.
-    sshfs-fuse # FUSE-based filesystem that allows remote filesystems to be mounted over SSH.
-    jmtpfs # FUSE Filesystem providing access to MTP devices.
+    # filesystem
+    # cifs-utils # Tools for managing Linux CIFS client filesystems.
+    # sshfs-fuse # FUSE-based filesystem that allows remote filesystems to be mounted over SSH.
+    # jmtpfs # FUSE Filesystem providing access to MTP devices.
 
     # networking tools
     mtr # A network diagnostic tool
