@@ -27,7 +27,7 @@
     krita
     krita-plugin-gmic
     wpsoffice-cn
-    xfce4.thunar
+    xfce.thunar
 
     # game
     hmcl
