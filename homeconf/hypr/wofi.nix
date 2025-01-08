@@ -11,10 +11,11 @@
       allow_images = true;
       normal_window = true;
       allow_markup = true;
+      width = 500;
     };
     style = ''
         #window {
-            background-color: rgba(45, 48, 59, 0.9);
+            background-color: rgba(45, 48, 59, 1.0);
             border: 1px solid rgb(124, 131, 137);
             font-family: monospace;
             font-size: 16px;
