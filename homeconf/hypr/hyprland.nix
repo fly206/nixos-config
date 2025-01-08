@@ -112,6 +112,8 @@
             "$mainMod SHIFT, Q, exit"
             "$mainMod, F, fullscreen, 0" #全屏
             "$mainMod SHIFT, F, togglefloating" #浮动
+	    "$mainMod CTRL, F, fullscreenstate, 0 3" #窗口内全屏
+
             "$mainMod SHIFT, E, exec, hyprctl reload" #重加载
             "$mainMod, P, pseudo" #伪平铺
             "$mainMod, H, togglesplit" #分割切换
@@ -184,7 +186,6 @@
         );
     };
     extraConfig = ''
-      bind = $mainMod CTRL, F, fullscreenstate, 0, 3 #窗口内全屏
       # window resize
       bind = $mainMod, R, submap, resize
       submap = resize
