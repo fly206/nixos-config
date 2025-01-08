@@ -102,12 +102,16 @@
 
         "$mainMod" = "SUPER";
 
+        bindm = [
+            "$mainMod, mouse:272, movewindow" # Move window with the mouse
+            "$mainMod, mouse:273, resizewindow" # Resize window with the mouse
+        ];
+
         bind = [
             "$mainMod, Q, killactive"
             "$mainMod SHIFT, Q, exit"
             "$mainMod, F, fullscreen, 0" #全屏
             "$mainMod SHIFT, F, togglefloating" #浮动
-            "$mainMod CTRL, F, fullscreenstate, 0, 3" #浮动
             "$mainMod SHIFT, E, exec, hyprctl reload" #重加载
             "$mainMod, P, pseudo" #伪平铺
             "$mainMod, H, togglesplit" #分割切换
@@ -180,8 +184,7 @@
         );
     };
     extraConfig = ''
-      bindm = $mainMod, mouse:272, movewindow # Move window with the mouse
-      bindm = $mainMod, mouse:273, resizewindow # Resize window with the mouse
+      bind = $mainMod CTRL, F, fullscreenstate, 0, 3 #窗口内全屏
       # window resize
       bind = $mainMod, R, submap, resize
       submap = resize
