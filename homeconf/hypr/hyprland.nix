@@ -107,6 +107,7 @@
             "$mainMod SHIFT, Q, exit"
             "$mainMod, F, fullscreen, 0" #全屏
             "$mainMod SHIFT, F, togglefloating" #浮动
+            "$mainMod CTRL, F, fullscreenstate, 0, 3" #浮动
             "$mainMod SHIFT, E, exec, hyprctl reload" #重加载
             "$mainMod, P, pseudo" #伪平铺
             "$mainMod, H, togglesplit" #分割切换
@@ -155,7 +156,6 @@
 	    "$mainMod, F12, exec, ddcutil setvcp + 5"
 
             "$mainMod, return, exec, kitty"
-            "$mainMod, O, exec, microsoft-edge"
             "$mainMod, tab, exec, wofi --show drun"
 
             "$mainMod, N, exec, wpaperctl next"
