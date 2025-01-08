@@ -129,8 +129,8 @@ window#waybar.hidden {
     margin-right: 0;
 }
 
-#network {
-	/* background: #1e2021; */
+/* #network {
+	background: #1e2021;
 	border-radius: 3px;
 	color: #bd93f9;
 	margin-bottom: 4px;
@@ -139,7 +139,7 @@ window#waybar.hidden {
 	padding-left: 10px;
 	padding-right: 10px;
 	transition: none;
-}
+} */
 
 #pulseaudio {
 	background: #1e2021;
