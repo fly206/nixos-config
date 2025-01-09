@@ -28,6 +28,7 @@
     krita-plugin-gmic
     wpsoffice-cn
     xfce.thunar
+    screenkey
 
     # game
     hmcl
