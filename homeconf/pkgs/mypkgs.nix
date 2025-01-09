@@ -9,6 +9,7 @@
     ./mpv.nix
     ./neovim.nix
     ./obs.nix
+    ./spotifyd.nix
     ./startship.nix
     # ./yazi.nix
   ];
