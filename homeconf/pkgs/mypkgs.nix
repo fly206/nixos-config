@@ -28,8 +28,7 @@
     krita-plugin-gmic
     wpsoffice-cn
     xfce.thunar
-    screenkey
-
+    showmethekey
     # game
     hmcl
     glfw-wayland-minecraft
