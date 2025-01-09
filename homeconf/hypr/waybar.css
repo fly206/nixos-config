@@ -130,10 +130,10 @@ window#waybar.hidden {
 }
 
 #network {
-	background: #1e2021;
+	/* background: #1e2021; */
 	border-radius: 3px;
-	color: #bd93f9;
-	/* color: #ffffff; */
+	/* color: #bd93f9; */
+	color: #ffffff;
 	margin-bottom: 4px;
 	margin-left: 4px;
 	margin-top: 4px;

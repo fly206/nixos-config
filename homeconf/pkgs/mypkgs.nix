@@ -9,7 +9,6 @@
     ./mpv.nix
     ./neovim.nix
     ./obs.nix
-    ./spotifyd.nix
     ./startship.nix
     # ./yazi.nix
   ];
@@ -30,6 +29,8 @@
     wpsoffice-cn
     xfce.thunar
     showmethekey
+    spotify
+
     # game
     hmcl
     glfw-wayland-minecraft
