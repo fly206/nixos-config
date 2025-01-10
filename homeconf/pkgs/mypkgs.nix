@@ -31,6 +31,7 @@
     showmethekey
     spotify
     thunderbird
+    telegram-desktop
 
     # game
     hmcl
