@@ -100,7 +100,7 @@
     GenericName=Text Editor
     Comment=Edit text files
     TryExec=alacritty
-    Exec=alacritty -e nvim %F
+    Exec=kitty -e nvim %F
     Terminal=false
     Type=Application
     Keywords=Text;editor;
