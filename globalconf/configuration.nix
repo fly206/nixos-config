@@ -21,5 +21,6 @@
     ./services.nix
     ./fonts.nix
     ./proxychains.nix
+    ./virtualisation.nix
   ];
 }
