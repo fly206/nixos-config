@@ -7,5 +7,6 @@
         enableHardening = true;
         enableKvm = true;
         package = pkgs.virtualbox;
+        addNetworkInterface = false;
     };
 }
