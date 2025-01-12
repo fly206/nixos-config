@@ -99,7 +99,7 @@
             "float, title:^(视频播放器)$"
             "float, title:^(群聊的聊天记录)$"
 	    # xfce thuran
-	    "float, title:^(File Poeration Progress)$"
+	    "float, title:^(File Operation Progress)$"
 	];
 
         "$mainMod" = "SUPER";
