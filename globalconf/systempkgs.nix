@@ -33,4 +33,15 @@
   };
 
   programs.steam.enable = true;
+
+  programs.nix-ld = {
+    enable = true;
+    package = pkgs.nix-ld;
+    libraries = with pkgs; [
+      stdenv.cc.cc.lib
+      zlib
+      fuse
+      icu
+    ];
+  };
 }
