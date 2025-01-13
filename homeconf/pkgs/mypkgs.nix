@@ -31,6 +31,7 @@
     showmethekey
     spotify
     thunderbird
+    mihomo-party
 
     # game
     hmcl
