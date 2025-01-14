@@ -5,7 +5,7 @@
     enable = true;
     enableUpdateCheck = true;
     enableExtensionUpdateCheck = true;
-    vscode-extensions = [
+    extensions = [
         pkgs.vscode-extensions.bbenoist.nix
         pkgs.vscode-extensions.ms-vscode.cmake-tools
         pkgs.vscode-extensions.ms-vscode.cpptools
