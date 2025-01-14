@@ -10,6 +10,7 @@
     ./neovim.nix
     ./obs.nix
     ./startship.nix
+    ./vscode.nix
     # ./yazi.nix
   ];
 
